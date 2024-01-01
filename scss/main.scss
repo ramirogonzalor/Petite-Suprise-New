@@ -1,0 +1,21 @@
+//utils
+@import "./utils/variables";
+
+//base
+@import "./base/base";
+
+//component
+@import "./components/header";
+@import "./components/footer";
+@import "./components/reviews";
+@import "./components/desayunos";
+@import "./components/imgindex";
+
+
+
+//Pages
+@import "./pages/index";
+@import "./pages/contacto";
+@import "./pages/desayunos";
+@import "./pages/nosotros";
+@import "./pages/preguntasfrecuentes";

@@ -1,0 +1,50 @@
+
+.reviews-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.review {
+    width: 30%;
+    /* Ajustar según el espacio que desees entre las cajas */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.review:hover {
+    transform: scale(1.05);
+}
+
+.reviewer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.reviewer-avatar {
+    border-radius: 50%;
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.reviewer-info {
+    flex-grow: 1;
+}
+
+.reviewer-name {
+    font-weight: bold;
+}
+
+.rating {
+    color: #f39c12;
+}
+
+.review-text {
+    line-height: 1.6;
+}

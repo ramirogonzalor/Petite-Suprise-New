@@ -1,0 +1,45 @@
+.navbar{
+    .navbar-brand{
+        color: white;
+        font-style: italic;
+        font-family: serif;
+        font-weight: 600;
+    }
+}
+header{
+    background-color:a2d2ff ;
+    display: grid;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+
+    .imagenlogo{
+        width: 5rem;
+        height: 5rem;
+    }
+    
+    h1{
+        color: white;
+        display: inline-block;
+        font-size: 1,5rem;
+    }
+    
+    ul{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        
+        li{
+            color: white;
+            width: fit-content;
+            padding: 10px;
+            font-size: 1rem;
+        }
+    }
+    
+    a{
+        text-decoration: none;
+        color: black;
+    }
+}

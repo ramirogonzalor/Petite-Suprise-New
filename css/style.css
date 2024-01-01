@@ -1,5 +1,287 @@
+@charset "UTF-8";
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; }
+
+a {
+  text-decoration: none; }
+
+.navbar .navbar-brand {
+  color: white;
+  font-style: italic;
+  font-family: serif;
+  font-weight: 600; }
+
+header {
+  background-color: a2d2ff;
+  display: grid;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  grid-template-columns: repeat(4, 1fr); }
+  header .imagenlogo {
+    width: 5rem;
+    height: 5rem; }
+  header h1 {
+    color: white;
+    display: inline-block;
+    font-size: 1,5rem; }
+  header ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; }
+    header ul li {
+      color: white;
+      width: fit-content;
+      padding: 10px;
+      font-size: 1rem; }
+  header a {
+    text-decoration: none;
+    color: black; }
+
+footer {
+  background-color: a2d2ff;
+  color: white;
+  list-style: none;
+  margin-top: 20px; }
+  footer ul {
+    color: white;
+    list-style: none; }
+  footer .dropdown-toggle {
+    color: steelblue; }
+  footer .bi {
+    color: white; }
+  footer a {
+    color: white; }
+  footer .btn {
+    background-color: whitesmoke; }
+
+.reviews-container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 50px auto; }
+
+.review {
+  width: 30%;
+  /* Ajustar según el espacio que desees entre las cajas */
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out; }
+
+.review:hover {
+  transform: scale(1.05); }
+
+.reviewer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; }
+
+.reviewer-avatar {
+  border-radius: 50%;
+  margin-right: 10px;
+  width: 50px;
+  height: 50px; }
+
+.reviewer-info {
+  flex-grow: 1; }
+
+.reviewer-name {
+  font-weight: bold; }
+
+.rating {
+  color: #f39c12; }
+
+.review-text {
+  line-height: 1.6; }
+
+.titulodesayuno {
+  padding: 15px;
+  text-decoration: underline;
+  font-size: 2rem; }
+
+.contenedordesayuno {
+  padding-bottom: 20px;
+  display: flex;
+  text-align: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center; }
+  .contenedordesayuno .descaja1 {
+    background-image: url(../imagenes/imgchicas/desayunoaniversario.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border: solid 3px black;
+    font-size: 1rem;
+    background-position: bottom; }
+  .contenedordesayuno .descaja2 {
+    background-image: url(../imagenes/imgchicas/desayunocumple.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border: solid 3px black;
+    font-size: 1rem;
+    text-align: center;
+    background-position: bottom; }
+  .contenedordesayuno .descaja3 {
+    background-image: url(../imagenes/imgchicas/desayunopadre.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border: solid 3px black;
+    font-size: 1rem;
+    text-align: center;
+    background-position: center; }
+  .contenedordesayuno .descaja4 {
+    background-image: url(../imagenes/imgchicas/desayunomadre.jpg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border: solid 3px black;
+    font-size: 1rem;
+    text-align: center; }
+  .contenedordesayuno .descaja5 {
+    background-image: url(../imagenes/imgchicas/desayunopersonalizado.jpeg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border: solid 3px black;
+    font-size: 1rem;
+    text-align: center; }
+  .contenedordesayuno .descaja6 {
+    background-image: url(../imagenes/imgchicas/desayunomate.jpeg);
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border: solid 3px black;
+    font-size: 1rem;
+    text-align: center; }
+  .contenedordesayuno .descaja7 {
+    background-image: url(../imagenes/imgchicas/desayunosaludable.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    border: solid 3px black;
+    font-size: 1rem;
+    text-align: center; }
+
+.caja {
+  padding: 2px;
+  width: auto;
+  height: 300px; }
+  .caja__textoh {
+    color: aliceblue;
+    text-decoration: none;
+    text-shadow: 1px 1px  blue; }
+  .caja__encargo {
+    background-image: url(../imagenes/breakfast.jpg);
+    text-shadow: 10px black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    border-radius: 20px;
+    box-shadow: 5px 8px 12px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .caja__cualquieres {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    background-color: rgba(6, 161, 233, 0.595);
+    box-shadow: 5px 8px 12px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .caja a {
+    text-decoration: none; }
+
+.bodycontact {
+  background-color: #ffc8dd; }
+  .bodycontact .tituloscontact {
+    color: white; }
+  .bodycontact .container1 {
+    display: flex;
+    background-color: #fff;
+    height: 750px;
+    width: 1000px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 25px; }
+    .bodycontact .container1 .form {
+      padding: 30px 80px;
+      width: 50%;
+      display: flex;
+      flex-direction: column; }
+    .bodycontact .container1 .form h2 {
+      font-size: 45px;
+      color: #4844A9;
+      font-weight: 600;
+      margin-bottom: 25px; }
+    .bodycontact .container1 .form p {
+      font-size: 16px;
+      color: #969EAE;
+      margin-bottom: 25px; }
+    .bodycontact .container1 label {
+      font-size: 15px;
+      color: #969EAE;
+      margin-bottom: 15px; }
+    .bodycontact .container1 .box {
+      border: 0;
+      background-color: #f4f4fd;
+      padding: 15px;
+      border-radius: 25px;
+      margin-bottom: 25px;
+      outline: none; }
+    .bodycontact .container1 .submit {
+      background-color: #ffc8dd;
+      border: 0;
+      padding: 15px;
+      color: #fff;
+      font-size: 16px;
+      border-radius: 25px;
+      width: 250px;
+      margin-top: 25px;
+      box-shadow: 0 0 20px rgba(201, 199, 253, 0.5); }
+    .bodycontact .container1 .info {
+      padding: 50px; }
+    .bodycontact .container1 .img-1 {
+      width: 350px;
+      margin-bottom: 75px; }
+    .bodycontact .container1 .location {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 60px; }
+    .bodycontact .container1 .icons {
+      display: flex;
+      margin-bottom: 31px; }
+    .bodycontact .container1 .icons img {
+      width: 35px;
+      margin-right: 10px; }
+    .bodycontact .container1 .icons p {
+      font-size: 14px;
+      color: #969EAE; }
+  @media (max-width: 990px) {
+    .bodycontact .container1 {
+      width: 350px;
+      height: 800px;
+      margin-top: 50px; }
+    .bodycontact .info {
+      display: none; }
+    .bodycontact .form {
+      width: 100%;
+      padding: 30px; } }
+
+/*# sourceMappingURL=style.css.map */
